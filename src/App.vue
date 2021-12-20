@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Header/>
+    <headerComponent/>
     <router-view/>
   </div>
 </template>
 
 <script setup>
-  import Header from "@/components/Header.vue";
+  import headerComponent from "@/components/Header.vue";
 </script>
 
 <style lang="scss">
