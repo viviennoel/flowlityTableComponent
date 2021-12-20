@@ -1,0 +1,154 @@
+// Creation of a variable for the base colors
+// Use of darken and lighten functions in order to manipulate this value
+$primary-color: #2c3e50;
+$secondary-color: #49aa85;
+$tertiary-color: #cecece;
+$quaternary-color: #ffffff;
+$octary-color: #e7e7e7;
+$btn-tertiary-color: #a8a8a875;
+$blue-flowlity: #2e84e6;
+
+// Font weight
+$light: 400;
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: $primary-color;
+    min-height: 100vh;
+    background-image: url("https://res.cloudinary.com/viviennoel07/image/upload/c_scale,q_43,w_714/v1616454863/Bg_Footer_ukhetp.jpg");
+}
+  
+#nav {
+    a {
+        font-weight: bold;
+        color: $primary-color;
+  
+        &.router-link-exact-active {
+            color: $secondary-color;
+        }
+    }
+}
+
+.home_container{
+    background: radial-gradient(#ffffff, #ffffff);
+}
+
+.cursor-default {
+    cursor: default;
+ }
+
+.display-2 {
+    font-size: 19px;
+}
+
+.overflow-x-scroll{
+    overflow-x: scroll;
+}
+
+.text-small{
+    font-size: 0.8rem;
+}
+
+.header{
+    box-shadow: lighten($primary-color, 50%) 0px 0px 5px 0px;
+    background-image: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+}
+
+.btn{
+    line-height: 1;
+    padding: 4px 5px;
+}
+
+.btn-large{
+    line-height: 1.5;
+    padding: 8px 20px;
+}
+
+.btn-primary{
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-secondary{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
+// The butons on Focus & active need modification according the designsystem defined
+.btn-tertiary{
+    background-color: $quaternary-color;
+    border-color: $quaternary-color;
+    box-shadow: $quaternary-color inset 0px 0px 15px 3px, $primary-color inset 3px 2px 9px 0px;
+    color:$primary-color;
+    &:hover {
+        background-color: $octary-color;
+        border-color: $primary-color;
+        color:$primary-color;
+    }
+}
+
+// Table style
+table{
+    .table_bg-dark{
+    background-color: $primary-color;
+    color:$quaternary-color;
+        th{
+            color:$primary-color;
+        }
+        .active{
+            background-color: $tertiary-color;
+            color:$primary-color;
+        }
+    }
+    td{
+        width:110px;
+        padding: 5px !important;
+        input{
+            width:100px;
+        }
+    }
+    th{
+        min-width:150px;
+        text-align: left;
+        padding: 8px 5px !important;
+        background-color: $tertiary-color;
+        cursor: default;
+    }
+}
+
+
+
+
+.array-rendering .table_data {
+    padding-left:0;
+}
+
+.table_nested{
+    font-size: 0.9rem;
+    
+    th{
+        font-weight: $light;
+        background-color: $tertiary-color;
+    }
+    td{
+        background-color: $octary-color;
+    }
+}
+
+.nav_icon{
+    height:1rem;
+}
+
+// Media queries
+// md-screens breakpoint
+@media screen and (min-width: 768px) {
+    .array-rendering .table_data {
+        padding-left:150px;
+    }
+    th{
+        position: absolute;
+    }
+}
