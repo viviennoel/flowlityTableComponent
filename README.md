@@ -1,4 +1,4 @@
-# flowlitytabletest
+# flowlity
 
 ## Project setup
 ```
