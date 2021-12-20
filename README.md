@@ -18,7 +18,7 @@ In order to install the packages without vulnerabilities, use the command bellow
 ```
 npm ci
 ```
-![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639966452/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.14.03_owzulk.png)
+![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639986999/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_08.56.18_a1wjzs.png)
 
 The command npm ci is necessary to download the correcetd dependencies.
 
@@ -90,6 +90,9 @@ npm run test:cypress
 
 #### On multiple rows the application provide the functionalities:
 - display multiple rows **COMPLIANT**
+##### In order to create an useful solution, I thought on the business need for my solution.
+The table component is reusable (and reused) for the page dashboard and the page warehouse ans present different properties and dataset according the props passed in the parent component. For this reason, the page warehouse is presenting a table "readOnly" that **won't be saved upon modification**.
+
 - take input in a row that impact other rows **COMPLIANT**
 - take basic styling options by row, column or cell **COMPLIANT**
 - have 1-level nested sub-rows (a parent row can have children rows) **COMPLIANT**
