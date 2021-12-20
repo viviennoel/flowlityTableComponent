@@ -21,7 +21,7 @@
           <th>Expected (Units)</th>
           <div class="table_data">
             <td v-for="(item, index) in data" :key="item.id" @mouseover="hoverOver(item.id)">
-              <input v-model="item.expectedStock" :key="index" v-on:input="saveData" type="number"/>
+              <input v-model="item.expectedStock" :key="index" v-on:input="saveData" type="number" :data-testid="index + 'inputTest'"/>
             </td>
           </div>
         </tr>
@@ -152,12 +152,12 @@
   const saveData = () => {
     if (!readOnly.value) {
       updatePending.value = true
+    }
       data.map((dayData:{id:number, realStock:number, expectedStock:number, orders:{value:number, id:number, compagny:string}[]}) => {
         dayData.realStock = 0;
         dayData.orders.map((order:{value:number, id:number, compagny:string}) => dayData.realStock += order.value)
       })
       store.commit('modifyData');
-    }
   }
 
   // Export the data in the Json-Server DB

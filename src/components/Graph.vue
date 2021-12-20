@@ -12,7 +12,7 @@ import { Chart } from "highcharts-vue";
 import Highcharts from "highcharts";
 import exportingInit from "highcharts/modules/exporting";
 import stockInit from "highcharts/modules/stock";
-import { reactive, computed, watchEffect } from 'vue';
+import { reactive, computed } from 'vue';
 
 stockInit(Highcharts);
 exportingInit(Highcharts);
@@ -26,18 +26,19 @@ export default {
       type: Object
     }
   },
-
   components: {
     highcharts: Chart
   },
 
-  setup(props){
+// Due to Highchart synthax, we are not using <script setup> for this component
+// eslint-disable-next-line
+  setup(props){ 
     // Create Dataset
     const data = reactive(props.dataset);
     // For the labels, need to order, sanitize and verify the labels. 
     // As well the option to index value & label for more safety
     const labelGraph = reactive([1,2,3]);
-    const dataGraph = computed({
+    const dataGraph = computed({ // eslint-disable-next-line
       get: () => data.map(({ orders, realStock, id, timestamp, ...item }) => item.expectedStock),
       set: val => {
         data.value = val
