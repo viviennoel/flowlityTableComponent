@@ -4,9 +4,9 @@
     <div class="home_container p-1 p-md-3">
       <h2 class="display-2 p-2">Your stock of office supplies</h2>
       <!-- Graph component -->
-      <GraphComponent :dataset="dataset" v-bind:is="Table"/>
+      <graph-main :dataset="dataset" v-bind:is="TableMain"/>
       <!-- Table component -->
-      <TableComponent :dataset="dataset" :readOnly="false" dataName="data" />
+      <table-main :dataset="dataset" :readOnly="false" dataName="data" />
     </div>
   </div>
 </template>
@@ -14,8 +14,8 @@
 <script setup lang="ts">
   import store from '@/store/index'; // Access store data
   import { reactive } from 'vue'; // Manipulate dynamic states
-  import TableComponent from '@/components/Table.vue'; // @ is an alias to /src
-  import GraphComponent from '@/components/Graph.vue';
+  import TableMain from '@/components/Table.vue'; // @ is an alias to /src
+  import GraphMain from '@/components/Graph.vue';
 
   const dataset = reactive(store.state.data);
 </script>

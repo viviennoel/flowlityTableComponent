@@ -59,8 +59,8 @@
           <!-- Title and button to close the editor -->
           <div class="w-100 d-md-flex pt-md-5 pb-2">
             <h2 class="display-2 my-auto ml-0">Details of the day {{ new Intl.DateTimeFormat('fr-FR').format(new Date(item.timestamp)) }}</h2>
-            <ButtonComponent :onClick="hoverOut" class="btn-tertiary mt-3 mt-md-0 ml-md-5">Close <img src="https://res.cloudinary.com/viviennoel07/image/upload/c_scale,w_50/v1639853594/close-eyes_mfyy32.png" alt="close editor" class="nav_icon"/></ButtonComponent>
-            <ButtonComponent :onClick="addOrder" class="btn-primary mt-3 mt-md-0 ml-2">Add provider <img src="https://res.cloudinary.com/viviennoel07/image/upload/c_scale,q_67,w_50/v1639943950/add-user_yk1w8l.png" alt="add provider" class="nav_icon"/></ButtonComponent>
+            <button-btn :onClick="hoverOut" class="btn-tertiary btn mt-3 mt-md-0 ml-md-5">Close <img src="https://res.cloudinary.com/viviennoel07/image/upload/c_scale,w_50/v1639853594/close-eyes_mfyy32.png" alt="close editor" class="nav_icon"/></button-btn>
+            <button-btn :onClick="addOrder" class="btn-primary btn mt-3 mt-md-0 ml-2">Add provider <img src="https://res.cloudinary.com/viviennoel07/image/upload/c_scale,q_67,w_50/v1639943950/add-user_yk1w8l.png" alt="add provider" class="nav_icon"/></button-btn>
           </div>
 
           <!-- Desktop -->
@@ -114,7 +114,7 @@
     </div>
     <!-- Save the data when needed -->
     <div v-if="updatePending && !readOnly" class="text-left pb-5" @click="hoverOut">
-      <ButtonComponent :onClick="exportData" class="btn-large mt-3" id="save">Save</ButtonComponent>
+      <button-btn :onClick="exportData" class="btn-large mt-3" id="save">Save</button-btn>
     </div>
   </div>
 </template>
@@ -124,7 +124,7 @@
   // More information about this feature : https://v3.vuejs.org/api/sfc-script-setup.html#basic-syntax
   import store from '@/store/index'; // Access store data
   import { reactive, ref, defineProps } from 'vue'; // Manipulate dynamic states
-  import ButtonComponent from '@/components/Button.vue';
+  import ButtonBtn from '@/components/Button.vue';
 
   // Define the props 
   const props = defineProps({
