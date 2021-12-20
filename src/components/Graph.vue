@@ -18,6 +18,7 @@ stockInit(Highcharts);
 exportingInit(Highcharts);
 
 export default {
+  name: "GraphMain",
   props: {
     partsdata: {
       type: Array
