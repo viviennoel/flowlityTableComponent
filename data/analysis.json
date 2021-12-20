@@ -1,0 +1,143 @@
+{
+  "analysisData": [
+    {
+      "id": 1,
+      "update": "2021-12-17T21:16:38.847Z",
+      "data": [
+        {
+          "id": 1,
+          "timestamp": 1639639519000,
+          "expectedStock": 15,
+          "realStock": 10,
+          "orders": [
+            {
+              "id": 1,
+              "compagny": "officeDepot",
+              "value": 5
+            },
+            {
+              "id": 2,
+              "compagny": "mailChimp",
+              "value": 3
+            },
+            {
+              "id": 3,
+              "compagny": "aliExpress",
+              "value": 1
+            },
+            {
+              "id": 4,
+              "compagny": "delphiTools",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "timestamp": 1639725919000,
+          "expectedStock": 13,
+          "realStock": 12,
+          "orders": [
+            {
+              "id": 1,
+              "compagny": "ikea",
+              "value": 5
+            },
+            {
+              "id": 2,
+              "compagny": "mailChimp",
+              "value": 3
+            },
+            {
+              "id": 3,
+              "compagny": "aliExpress",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "timestamp": 1639856376000,
+          "expectedStock": 15,
+          "realStock": 10,
+          "orders": [
+            {
+              "id": 1,
+              "compagny": "officeDepot",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "compagny": "officeDepot",
+              "value": 2
+            },
+            {
+              "id": 3,
+              "compagny": "officeDepot",
+              "value": 2
+            },
+            {
+              "id": 4,
+              "compagny": "mailChimp",
+              "value": 3
+            },
+            {
+              "id": 5,
+              "compagny": "aliExpress",
+              "value": 1
+            },
+            {
+              "id": 6,
+              "compagny": "delphiTools",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "timestamp": 1639962716000,
+          "expectedStock": 13,
+          "realStock": 12,
+          "orders": [
+            {
+              "id": 1,
+              "compagny": "ikea",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "timestamp": 1640049116000,
+          "expectedStock": 13,
+          "realStock": 12,
+          "orders": [
+            {
+              "id": 1,
+              "compagny": "ikea",
+              "value": 5
+            },
+            {
+              "id": 1,
+              "compagny": "OfficeTwins",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "timestamp": 1640135516000,
+          "expectedStock": 13,
+          "realStock": 12,
+          "orders": [
+            {
+              "id": 1,
+              "compagny": "ikea",
+              "value": 12
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
