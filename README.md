@@ -135,6 +135,9 @@ Cypress have been used in order to carried out no regression tests.
 Use of BeforeEach to avoid redondancies.
 
 A video of the test is available in './cypress/videos'
+
+#### Click and discover now the video
+
 [![asciicast](https://res.cloudinary.com/viviennoel07/image/upload/c_scale,w_412/v1639990516/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_09.54.59_idcwqg.png)](https://res.cloudinary.com/viviennoel07/video/upload/v1639990434/home.spec.js_l09bdd.mp4)
 
 #### A project well structured and documented:
