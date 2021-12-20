@@ -19,6 +19,9 @@ In order to install the packages without vulnerabilities, use the command bellow
 npm ci
 ```
 ![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639966452/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.14.03_owzulk.png)
+
+The command npm ci is necessary to download the correcetd dependencies.
+
 ![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639968201/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.43.12_n0bbi4.png)
 
 ## Project setup
