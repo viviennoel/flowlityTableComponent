@@ -58,11 +58,14 @@ N.B: A test plan need to be established for an application in order to test ever
 In order to run the unit tests, use the command bellow.
 The following result is expected if the tests are passed successfully.
 
-![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639968306/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.44.56_vmepbk.png)
-
 ```
 npm run test:unit
 ```
+
+expected output:
+
+![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639968306/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.44.56_vmepbk.png)
+
 
 ### Run the functional tests
 
@@ -70,11 +73,14 @@ In order to run the functionnal (or no regression) tests, use the command bellow
 The following result is expected if the tests are passed successfully.
 #### N.B: The tests with Cypress are targeting the local url for this exercice. Therefore you need to have started the web app first and have it running on localhost:8080
 
-![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639968336/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.45.28_kqoje4.png)
-
 ```
 npm run test:cypress
 ```
+
+Expected output:
+
+![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639968336/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.45.28_kqoje4.png)
+
 
 # KEY FUNCTIONALITIES OF THIS EXERCICE
 
