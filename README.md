@@ -1,5 +1,7 @@
 # Technical test flowlity
 
+version 1.0 of the technical test carried out for Flowlity - 20 Dec 2021
+
 ![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1639966299/Capture_d_e%CC%81cran_2021-12-20_a%CC%80_03.11.08_rhirv1.png)
 
 # GETTING STARTED
