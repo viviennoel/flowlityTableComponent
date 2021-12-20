@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "db:serve": "json-server --watch ./src/data/db.json --port=3001",
-    "serve": "vue-cli-service serve",
+    "serve": "eslint --init && vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:cypress": "./node_modules/.bin/cypress run --record --key 5fcdd5fc-aaf7-46d5-a321-cca2e7c462e8",
@@ -23,8 +23,8 @@
   "devDependencies": {
     "@types/jest": "^24.0.19",
     "@types/node": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
@@ -37,7 +37,7 @@
     "@vue/test-utils": "^2.0.0-0",
     "cypress": "^9.1.1",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
+    "eslint-plugin-vue": "^8.2.0",
     "json-server": "^0.17.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
