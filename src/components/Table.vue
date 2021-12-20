@@ -53,7 +53,7 @@
 
     <!-- Nested rows - Details -->
     <!-- The detailed informations are given for the day highlighted in the main table -->
-    <div class="array-rendering table_detail overflow-x-scroll pb-3">
+    <div class="array-rendering table_detail overflow-x-scroll pb-3" v-if="activeData">
       <table class="w-100">
         <div v-for="(item) in activeData" :key="item.id" :id="item.timestamp" class="table_nested mt-3">
           <!-- Title and button to close the editor -->
