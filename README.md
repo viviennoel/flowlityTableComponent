@@ -10,6 +10,14 @@ version 1.0 of the technical test carried out for Flowlity - 20 Dec 2021
 
 This webapp was developed with Vue 3 in order to be close of the current technology used by Flowlity. It includes a JSON-server and some data for the modelisation of the stock evolution.
 
+#### Clone the repository
+
+In order to clone the repository, run :
+
+```
+git clone https://github.com/viviennoel/flowlityTableComponent.git
+```
+
 #### Install packages
 
 The setup of the project with vue CLI present many vulnerabilities with some high.
