@@ -175,7 +175,6 @@
   // Hide nested rows
   const hoverOut = () => {
     activeData.value = null;
-    console.log(activeData)
   }
 
   // Add an order to the table 
