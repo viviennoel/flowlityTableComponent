@@ -1,0 +1,6 @@
+{
+  "projectId": "za4fqd",
+  "baseUrl": "http://localhost:8080",
+  "chromeWebSecurity": false,
+  "pageLoadTimeout": 120000
+}
