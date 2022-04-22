@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "db:serve": "json-server --watch ./src/data/db.json --port=3001",
-    "serve": "vue-cli-service serve",
+    "serve": "eslint --init && vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:cypress": "./node_modules/.bin/cypress run --record --key 5fcdd5fc-aaf7-46d5-a321-cca2e7c462e8",
